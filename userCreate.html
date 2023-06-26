@@ -19,12 +19,20 @@
     <div class="container" id="container ">
         <form id=container>
             <label for="firstName" id="fNameErr"></label>
-            <input type="text" class="input" id="firstName" placeholder="Enter your firstName" required>
+            <input type="text" class="input" id="firstName" placeholder="Enter your firstName" onkeypress="return validateKeyStrokes(event)" required>
             <label for="lastName" id="lNameErr"></label>
             <input type="text" class="input" id="lastName" placeholder="Enter your lastName" required>
             <label for="email" id="emailErr"></label>
             <input type="email" class="input" id="email" placeholder="Enter your email" required>
-            <label for="pass" id="passErr"></label>
+            <label for="pass" id="passErr" class="tootltipBox">
+                <div id="tooltip" class="tooltip">
+                    <div id = "a" class="child">a</div>
+                    <div id="9" class="child">9</div>
+                    <div id="*" class="child">*</div>
+                    <div id ="A" class="child">A</div>
+                    <div id="8+" class="child">8+</div>
+                </div>
+            </label>
             <input type="password" class="input" id="pass" placeholder="Enter your password " required>
             <label for="confirpass" id="confirpassErr" ></label>
             <input type="password" class="input" id="confirpass" placeholder="Repeat password " required>
